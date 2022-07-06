@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pro.css">
+    <title>Animated Profile Card</title>
+</head>
+<body>
+    <div class="card" data-state="#about">
+        <div class="card-header">
+           <div class="card-cover" style="background-image: url(/imagenes/boy.jfif);"></div>
+           <img src="/imagenes/boy.jfif" alt="Avatar" class="card-avatar">
+           <h1 class="card-fullname">Rod Dev</h1>
+           <h2 class="card-jobtitle">Front Developer</h2>
+    </div>
+    <div class="card-main">
+        <div class="card-section is-active" id="about">
+            <div class="card-content">
+                <div class="card-subtitle">ABOUT</div>
+                <p class="card-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit quos debitis iusto alias magni.</p>
+            </div>
+            <div class="card-social">
+                <a href="#"><img src="/imagenes/fb.png" alt="Facebook"></a>
+                <a href="#"><img src="/imagenes/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="/imagenes/insta.png" alt="insta"></a>
+                <a href="#"><img src="/imagenes/linkedin.png" alt="linkedin"></a>
+            </div>
+        </div>
+        <div class="card-section" id="experience">
+            <div class="card-content">
+                <div class="card-subtitle">WORK EXPERIENCE</div>
+                <div class="card-timeline">
+                    <div class="card-item" data-year="2014">
+                        <div class="card-item-title">Frontend Developer</div>
+                        <div class="card-item-desc">Lorem ipsum dolor sit amet.</div>
+                    </div>
+                    <div class="card-item" data-year="2016">
+                        <div class="card-item-title">UI Developer</div>
+                        <div class="card-item-desc">Lorem ipsum dolor sit amet.</div>
+                    </div>
+                    <div class="card-item" data-year="2018">
+                        <div class="card-item-title">Illustrator</div>
+                        <div class="card-item-desc">Lorem ipsum dolor sit amet.</div>
+                    </div>
+                    <div class="card-item" data-year="2020">
+                        <div class="card-item-title">Full Stack Developer</div>
+                        <div class="card-item-desc">Lorem ipsum dolor sit amet.</div>
+                    </div>
+                </div>
+                <div class="card-section" id="contact">
+                    <div class="card-content">Contact</div>
+                    <div class="card-contact-wrapper">
+                        <div class="card-contact">
+                            <img src="/imagenes/location.png" alt="location">
+                            Lorem ipsum dolor sit amet consectetur.
+                        </div>
+                        <div class="card-contact">
+                            <img src="/imagenes/phone.png" alt="phone">
+                            Lorem ipsum dolor sit amet consectetur.
+                        </div>
+                        <div class="card-contact">
+                            <img src="/imagenes/mail.png" alt="mail">
+                            Lorem ipsum dolor sit amet consectetur.
+                        </div>
+                        <buttom class="contact-ne">WORK TOGETHER</buttom>
+                    </div>
+                </div>
+            </div>
+            <div class="card-buttons">
+                <button class="is-active" data-section="#about">ABOUT</button>
+                <button class="is-active" data-section="#experience">EXPERIENCE</button>
+                <button class="is-active" data-section="#contact">CONTACT</button>
+            </div>
+        </div>
+    </div>
+    <script src="/js/pro.js"></script>
+</body>
+</html>
